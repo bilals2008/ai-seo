@@ -1,6 +1,7 @@
 /* File: src/index.css */
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "daisyui";
 @theme {
   --font-inter: 'Inter', sans-serif;
 }
@@ -42,7 +43,18 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom Purple Theme Colors */
+  --color-purple-bg: var(--purple-bg);
+  --color-purple-gradient-start: var(--purple-gradient-start);
+  --color-purple-gradient-end: var(--purple-gradient-end);
+  --color-purple-accent: var(--purple-accent);
+  --color-purple-glow: var(--purple-glow);
+  --color-dark-purple: var(--dark-purple);
+  --color-bright-purple: var(--bright-purple);
+  --color-shadow-purple: var(--shadow-purple);
 }
+
 :root {
   --radius: 0.65rem;
   --background: oklch(1 0 0);
@@ -79,37 +91,47 @@
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
+  --background: oklch(0.15 0.03 280); /* Deep Purple Background */
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
+  --card: oklch(0.18 0.04 275); /* Slightly lighter purple for cards */
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
+  --popover: oklch(0.18 0.04 275);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.546 0.245 262.881);
-  --primary-foreground: oklch(0.379 0.146 265.522);
-  --secondary: oklch(0.274 0.006 286.033);
+  --primary: oklch(0.65 0.28 285); /* Bright Purple Primary */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.25 0.05 280); /* Medium purple for secondary */
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
+  --muted: oklch(0.22 0.04 278);
   --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
+  --accent: oklch(0.7 0.32 290); /* Bright magenta accent */
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.21 0.006 285.885);
+  --border: oklch(0.4 0.15 285 / 30%); /* Purple tinted border */
+  --input: oklch(0.25 0.05 280 / 80%); /* Purple input background */
+  --ring: oklch(0.7 0.32 290); /* Bright purple ring */
+  --chart-1: oklch(0.65 0.28 285);
+  --chart-2: oklch(0.55 0.25 295);
+  --chart-3: oklch(0.45 0.22 305);
+  --chart-4: oklch(0.6 0.3 275);
+  --chart-5: oklch(0.7 0.35 265);
+  --sidebar: oklch(0.12 0.02 285); /* Very dark purple sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.546 0.245 262.881);
-  --sidebar-primary-foreground: oklch(0.379 0.146 265.522);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-primary: oklch(0.65 0.28 285);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.25 0.05 280);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --sidebar-border: oklch(0.4 0.15 285 / 20%);
+  --sidebar-ring: oklch(0.7 0.32 290);
+
+  /* Custom Purple Theme Colors */
+  --purple-bg: oklch(0.15 0.03 280); /* Main deep purple background */
+  --purple-gradient-start: oklch(0.15 0.03 280); /* Gradient start */
+  --purple-gradient-end: oklch(0.08 0.015 290); /* Gradient end (darker) */
+  --purple-accent: oklch(0.7 0.32 290); /* Bright purple accent */
+  --purple-glow: oklch(0.65 0.28 285 / 40%); /* Glow effect */
+  --dark-purple: oklch(0.12 0.02 285); /* Very dark purple */
+  --bright-purple: oklch(0.75 0.35 285); /* Brightest purple */
+  --shadow-purple: oklch(0.1 0.05 285 / 50%); /* Purple shadow */
 }
 
 @layer base {
@@ -117,6 +139,37 @@
     @apply border-border outline-ring/50 font-inter;
   }
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-[#020106] text-foreground font-inter;
+  }
+}
+
+/* Utility classes for purple theme */
+@layer utilities {
+  .bg-purple-gradient {
+    background: linear-gradient(135deg, var(--purple-gradient-start), var(--purple-gradient-end));
+  }
+  
+  .bg-purple-main {
+    background-color: var(--purple-bg);
+  }
+  
+  .shadow-purple-glow {
+    box-shadow: 0 0 20px var(--purple-glow), 0 0 40px var(--purple-glow);
+  }
+  
+  .shadow-purple-soft {
+    box-shadow: 0 4px 20px var(--shadow-purple);
+  }
+  
+  .border-purple-accent {
+    border-color: var(--purple-accent);
+  }
+  
+  .text-purple-bright {
+    color: var(--bright-purple);
+  }
+  
+  .bg-dark-purple {
+    background-color: var(--dark-purple);
   }
 }
