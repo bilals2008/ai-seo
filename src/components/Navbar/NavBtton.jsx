@@ -17,8 +17,9 @@ function NavBtton() {
           Join waitlist
         </Button>
       </div>
-
-      <Mobile />
+      <div className="md:hidden block">
+        <Mobile />
+      </div>
     </div>
   );
 }
