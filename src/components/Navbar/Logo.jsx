@@ -4,7 +4,7 @@ import logo from '@/assets/images/Logo.png'
 function Logo() {
   return (
     <div>
-        <img src={logo} className='w-10 h-10'/>
+        <img src={logo} className='size-8 md:size-10'/>
     </div>
   )
 }
