@@ -4,7 +4,7 @@ import { companies } from "./companeis";
 
 function Companies() {
   return (
-    <div className="relative z-[99999] w-full  bg-[#020103] shadow-[-9px_-71px_72px_46px_#000000]">
+    <div className="relative z-[99999] w-full  bg-[#020103] shadow-[-9px_-71px_72px_46px_#000000] mb-10">
       <h1 className="text-center underline text-[#878687] z-[9999] relative font-light py-10">
         Trusted by the world's most innovative teams
       </h1>

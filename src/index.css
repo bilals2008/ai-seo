@@ -145,6 +145,8 @@
 
 /* Utility classes for purple theme */
 @layer utilities {
+  /* globals.css ya index.css mein */
+
   .bg-purple-gradient {
     background: linear-gradient(135deg, var(--purple-gradient-start), var(--purple-gradient-end));
   }
