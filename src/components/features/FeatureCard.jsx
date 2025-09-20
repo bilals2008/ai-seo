@@ -16,7 +16,7 @@ function FeatureCard() {
           SEO goal setting
         </h3>
         <p className="text-gray-400 font-light text-sm leading-relaxed">
-          Helps you set and achieve SEO goals with guided assistance.
+          Helps you set and achieve SEO <br /> goals with guided assistance.
         </p>
       </div>
     </div>
