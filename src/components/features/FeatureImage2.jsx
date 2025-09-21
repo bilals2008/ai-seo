@@ -1,16 +1,15 @@
 // File: src/components/features/FeatureImage2.jsx
 import React from "react";
-import featureImg from "../../assets/images/feture1.png";
+import featureImg2 from "../../assets/images/feature2.png";
 
 function FeatureImage2() {
   return (
     <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
       {/* Image */}
       <img
-        src={featureImg}
+        src={featureImg2}
         alt="Feature Preview"
-        className="w-full h-auto object-cover opacity-95 
-                   hover:scale-[1.02] transition-transform duration-500 ease-out"
+        className="w-11/12 ml-auto h-96 mt-auto object-cover opacity-95"
       />
 
       {/* Gradient Overlay */}
@@ -22,7 +21,8 @@ function FeatureImage2() {
           User-friendly dashboard
         </h3>
         <p className="text-gray-300 text-xs md:text-sm leading-relaxed max-w-md">
-          Perform complex SEO <br/>audits and optimizations with a single click.
+          Perform complex SEO <br />
+          audits and optimizations with a single click.
         </p>
       </div>
     </div>

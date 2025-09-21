@@ -3,7 +3,7 @@ import React from 'react'
 import cone from "../../assets/images/cone.png";
 function FeatureCard2() {
   return (
-    <div className="w-full md:h-[390px] md:w-72 bg-black rounded-xl p-5 flex flex-col items-center justify-evenly space-y-4 shadow-lg border border-[#48484b] mb-10">
+    <div className="w-full md:h-[395px] md:w-72 bg-black rounded-xl p-5 flex flex-col items-center justify-evenly space-y-4 shadow-lg border border-[#48484b] ">
       {/* Image */}
       <div className="flex justify-center w-full">
         <img src={cone} alt="visual" className="w-32 h-32 object-contain" />

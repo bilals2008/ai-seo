@@ -4,12 +4,12 @@ import featureImg from "../../assets/images/feture1.png";
 
 function FeatureImage() {
   return (
-    <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
+    <div className="relative w-full rounded-xl overflow-hidden shadow-lg  py-2 mt-[-15px]">
       {/* Image */}
       <img
         src={featureImg}
         alt="Feature Preview"
-        className="w-full h-auto object-cover opacity-95 
+        className="w-11/12 ml-auto h-full mt-auto object-cover opacity-95 
                    hover:scale-[1.02] transition-transform duration-500 ease-out"
       />
 

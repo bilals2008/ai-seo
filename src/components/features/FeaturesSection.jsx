@@ -10,7 +10,7 @@ function FeaturesSection() {
   return (
     <div className="w-full px-4 max-w-6xl mx-auto mt-28 space-y-28">
       {/* 1st Row → Card + Image */}
-      <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-center">
         <FeatureCard />
         <div className="flex-1">
           <FeatureImage />
@@ -18,7 +18,7 @@ function FeaturesSection() {
       </div>
 
       {/* 2nd Row → Image + Card */}
-      <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-center">
         <div className="flex-1">
           <FeatureImage2 />
         </div>
