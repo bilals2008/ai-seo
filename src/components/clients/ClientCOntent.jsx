@@ -38,14 +38,14 @@ function ClientContent() {
                   <img
                     src={client}
                     alt="client"
-                    className="w-full h-full object-cover z-10 "
+                    className="w-full h-full object-cover z-10 shadow-[-5px_0px_136px_69px_#17072e]"
                   />
                 </div>
               </div>
             </div>
 
             {/* Text content */}
-           <ClientResponse/>
+            <ClientResponse />
           </div>
         </div>
       </div>
