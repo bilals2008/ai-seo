@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Companies from "./components/compainies/Companies";
 import FeaturesSection from "./components/features/FeaturesSection";
 import FeaturesHeading from "./components/features/FeaturesHeading";
+import SeoFeatures from "./components/seo-features/SeoFeatures";
 function App() {
   return (
     <div className=" bg-[#05020a] text-white h-auto pb-10">
@@ -13,8 +14,8 @@ function App() {
         <Hero />
         <Companies />
        < FeaturesHeading/>
-
         <FeaturesSection />
+        <SeoFeatures/>
       </div>
     </div>
   );
