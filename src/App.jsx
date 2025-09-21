@@ -7,6 +7,7 @@ import FeaturesSection from "./components/features/FeaturesSection";
 import FeaturesHeading from "./components/features/FeaturesHeading";
 import SeoFeatures from "./components/seo-features/SeoFeatures";
 import Client from "./components/clients/Client";
+import { Separator } from "@/components/ui/separator"
 function App() {
   return (
     <div className=" bg-[#05020a] text-white h-auto pb-10">
@@ -17,6 +18,7 @@ function App() {
        < FeaturesHeading/>
         <FeaturesSection />
         <SeoFeatures/>
+        <Separator />
         <Client/>
       </div>
     </div>

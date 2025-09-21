@@ -5,7 +5,7 @@ import ClientCOntent from "./ClientCOntent";
 
 const Client = () => {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden py-20 px-4">
+    <div className="min-h-screen bg-[#010103] relative overflow-hidden py-20 px-4">
       {/* Grid Pattern Background */}
       <div
         className="absolute inset-0 opacity-20"
@@ -21,8 +21,8 @@ const Client = () => {
       {/* Content Container */}
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
-      <ClientHeader/>
-<ClientCOntent/>
+        <ClientHeader />
+        <ClientCOntent />
       </div>
     </div>
   );
