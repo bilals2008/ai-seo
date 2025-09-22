@@ -10,6 +10,7 @@ import Client from "./components/clients/Client";
 import { Separator } from "@/components/ui/separator"
 import Pricing from "./components/pricing/Pricing";
 import AISEOSection from "./components/CTA/Cta";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className=" bg-[#05020a] text-white h-auto pb-10">
@@ -24,6 +25,7 @@ function App() {
         <Client/>
         <Pricing/>
         <AISEOSection/>
+        <Footer/>
       </div>
     </div>
   );
