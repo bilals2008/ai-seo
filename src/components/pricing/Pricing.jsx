@@ -5,7 +5,7 @@ import PricingCard from './PricingCard';
 import { Switch } from "@/components/ui/switch";
 function Pricing() {
   return (
-    <Card className="max-w-6xl bg-transparent text-slate-200 border-none">
+    <Card className=" pt-30 max-w-6xl bg-transparent text-slate-200 border-none">
       <CardHeader className="text-center">
         <CardTitle className="text-5xl pb-3 font-light leading-relaxed">
           Pricing

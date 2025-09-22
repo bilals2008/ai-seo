@@ -5,7 +5,7 @@ import ClientCOntent from "./ClientCOntent";
 
 const Client = () => {
   return (
-    <div className="min-h-screen bg-[#010103] relative overflow-hidden py-20 px-4">
+    <div className=" h-auto bg-[#010103] relative overflow-hidden py-20 px-4">
       {/* Grid Pattern Background */}
       <div
         className="absolute inset-0 opacity-20"

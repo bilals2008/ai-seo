@@ -29,10 +29,10 @@ function PricingCard() {
                 <span className="text-sm text-gray-400">/mo</span>
               </p>
 
-              <hr className="my-4 border-gray-700" />
+              <hr className="my-4 border-gray-700 pb-4" />
 
               <div>
-                <ul className="space-y-3">
+                <ul className="space-y-5">
                   {card.features.map((feature, i) => (
                     <li
                       key={i}
