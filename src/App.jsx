@@ -24,12 +24,10 @@ function App() {
       <ReactLenis
         root
         options={{
-          duration: 4.3, 
-          lerp: 0.1, 
+          duration: 1.2, 
+          lerp: 0.08, 
           smoothWheel: true, 
-          smoothTouch: false, 
-          touchMultiplier: 2, 
-          wheelMultiplier: 1, 
+          smoothTouch: true, 
           infinite: false, 
           gestureDirection: "vertical", 
           orientation: "vertical", 
