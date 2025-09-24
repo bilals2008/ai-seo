@@ -25,7 +25,9 @@ function Mobile() {
   return (
     <Sheet className="md:hidden block">
       <SheetTrigger>
-        <Menu className="size-10 text-white cursor-pointer" />
+        <div className=" p-1 mt-1.5">
+          <Menu className=" text-white cursor-pointer" />
+        </div>
       </SheetTrigger>
       <SheetContent className="w-80">
         <SheetHeader>
