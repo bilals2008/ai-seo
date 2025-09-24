@@ -3,10 +3,14 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import Mobile from "./Mobile";
-function NavBtton() {
+function NavBtton({border}) {
   return (
     <div className="flex item-center gap-2 justify-center">
-      <div className="border border-white/40 rounded-md px-2 py-1  md:px-3  text-[#6d6d6e]  hover:bg-white/10 cursor-pointer">
+      <div
+        className={`${
+          border && "border border-white/40"
+        } rounded-md px-2 py-1  md:px-3  text-[#6d6d6e]  hover:bg-white/10 cursor-pointer`}
+      >
         <Button
           className="
     font-light

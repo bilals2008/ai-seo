@@ -24,19 +24,19 @@ function App() {
       <ReactLenis
         root
         options={{
-          duration: 1.2, 
-          lerp: 0.08, 
-          smoothWheel: true, 
-          smoothTouch: true, 
-          infinite: false, 
-          gestureDirection: "vertical", 
-          orientation: "vertical", 
-          normalizeWheel: true, 
+          duration: 1.2,
+          lerp: 0.08,
+          smoothWheel: true,
+          smoothTouch: true,
+          infinite: false,
+          gestureDirection: "vertical",
+          orientation: "vertical",
+          normalizeWheel: true,
         }}
       >
         <div className="bg-[#05020a] text-white h-auto pb-10">
           <div className="max-w-6xl mx-auto ">
-            <Navbar />
+            <Navbar className={"border border-white/40"} border={true} seprator={true}/>
             <Hero />
             <Companies />
             <FeaturesHeading />

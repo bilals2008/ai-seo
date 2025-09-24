@@ -10,10 +10,16 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { navElem } from "./data/navElem";
+import { cn } from "@/lib/utils"; 
 
-function NavElements() {
+function NavElements({ className }) {
   return (
-    <div className="border border-white/40 rounded-full px-3 py-1 text-[#6d6d6e] hidden md:block">
+    <div
+      className={cn(
+        "rounded-full px-3 py-1 text-[#6d6d6e] hidden md:block",
+        className
+      )}
+    >
       <NavigationMenu>
         <NavigationMenuList>
           {navElem.menuItems.map((item) => (
@@ -24,12 +30,11 @@ function NavElements() {
                     {item.name}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-52">
-                    {item.subItems &&
-                      item.subItems.map((sub) => (
-                        <NavigationMenuLink key={sub.id} asChild>
-                          <NavLink to={sub.link}>{sub.name}</NavLink>
-                        </NavigationMenuLink>
-                      ))}
+                    {item.subItems?.map((sub) => (
+                      <NavigationMenuLink key={sub.id} asChild>
+                        <NavLink to={sub.link}>{sub.name}</NavLink>
+                      </NavigationMenuLink>
+                    ))}
                   </NavigationMenuContent>
                 </>
               ) : (
