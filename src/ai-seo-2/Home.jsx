@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import Features from "./features/Features";
+import Client from "./Client/Client";
 
 function Home() {
   return (
@@ -10,10 +11,11 @@ function Home() {
       <div className="max-w-6xl mx-auto relative pt-2">
         <div className="w-11/12 border border-white/30 rounded-md mx-auto">
           <Navbar seprator={false} />
-      </div>
         </div>
-        <Hero/>
-        <Features/>
+      </div>
+      <Hero />
+      <Features />
+      <Client/>
     </div>
   );
 }
