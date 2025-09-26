@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div className="w-full h-full relative flex flex-col items-center gap-5">
       <img src={cir3} className="w-1/2 h-1/2 absolute -z-10" />
-      <HeroBadge />
+      <HeroBadge className={"mx-auto"} />
       <CtaContent />
       <CtaImage />
     </div>

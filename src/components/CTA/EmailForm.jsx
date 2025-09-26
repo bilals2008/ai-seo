@@ -9,10 +9,10 @@ function EmailForm() {
       {/* Mobile layout (col) */}
       <div className="w-2xs flex flex-col gap-3 md:hidden mx-auto py-2 px-1">
         <Input
-          className="bg-transparent border border-slate-300 w-full rounded-sm py-6 px-3"
+          className="bg-transparent border border-slate-300 w-full rounded-sm  px-3"
           placeholder="Your email"
         />
-        <Button variant="" className="w-full h-12 rounded-sm bg-white text-black">
+        <Button variant="" className="w-full h-8 rounded-sm bg-white text-black">
           Join waitlist
         </Button>
       </div>
