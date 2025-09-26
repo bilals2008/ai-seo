@@ -9,7 +9,7 @@ function Features() {
     <div className="px-2 space-y-8">
       <FHeading />
       <FImage />
-      <div className="w-10/12 mx-auto">
+      <div className="w-10/12 mx-auto py-10">
         <SeoFeaturesList limit={6}/>
       </div>
     </div>
