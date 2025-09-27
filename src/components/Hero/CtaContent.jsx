@@ -30,8 +30,9 @@ function CtaContent() {
 
       {/* paragraph */}
       <p className="px-4   text-md md:text-lg mt-4 max-w-sm md:max-w-full text-center font-light">
-        Elevate your site's visibility effortlessly with AI, <br className="hidden md:block" /> where smart
-        technology meets user-friendly SEO tools.
+        Elevate your site's visibility effortlessly with AI,
+        <br className="hidden md:block" /> where smart technology meets
+        user-friendly SEO tools.
       </p>
 
       {/* button */}
