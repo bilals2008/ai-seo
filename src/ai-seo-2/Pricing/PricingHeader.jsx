@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button"
 function PricingHeader({ plan }) {
   return (
     <th
-      className={` p-1 md:p-6 text-center  pt-2 ${
-        plan.popular ? "bg-[#311858]/30 rounded-t-md" : ""
+      className={` p-2 md:p-6   pt-2 ${
+        plan.popular ? "bg-[#140B27] rounded-t-md" : ""
       }`}
     >
-      <h3 className=" text-lg md:text-xl font-medium mb-4">{plan.name}</h3>
+      <h3 className=" text-xl md:text-2xl font-medium mb-4">{plan.name}</h3>
 
       {plan.popular ? (
         <Button
           className="
                 font-light
-                shadow-[inset_0px_0px_5px_1px_white,inset_2px_2px_16px_0px_#341949] bg-[#391c68]
+                shadow-[inset_0px_0px_4px_1px_white] bg-[#391c68]
               "
         >
           {plan.buttonText}
