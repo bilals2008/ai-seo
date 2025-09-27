@@ -13,7 +13,7 @@ function Footer() {
         </div>
 
         {/* Center Nav */}
-        <nav className="order-3 sm:order-0 hidden sm:flex gap-6 text-sm text-gray-400  ">
+        <nav className="order-3 font-extralight sm:order-0 hidden sm:flex gap-6 text-sm text-gray-400  ">
           <p>Features</p>
           <p>Integration</p>
           <p>Updates</p>
@@ -29,7 +29,8 @@ function Footer() {
         </div>
       </div>
 
-      <nav className="sm:hidden flex flex-col p-5 gap-6 text-sm text-gray-400 pl-10">
+      {/* {mobile} */}
+      <nav className="sm:hidden font-extralight flex flex-col p-5 gap-6 text-sm text-gray-400 pl-10">
         <p>Features</p>
         <p>Integration</p>
         <p>Updates</p>
