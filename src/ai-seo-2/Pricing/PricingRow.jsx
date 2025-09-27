@@ -37,18 +37,17 @@ const PricingRow = ({ label, plans, field, feature }) => {
             <td key="basic" className="p-4 ">
               <span className="space-y-2 md:space-y-0">
                 {
-                  <p className="text-xs block sm:hidden w-full ">
+                  <p className="text-xs block sm:hidden">
                     {feature.name}
                   </p>
                 }
                 <p className="text-center md:text-left">
-                  {" "}
                   {renderValue(feature.basic)}
                 </p>
               </span>
             </td>,
 
-            <td key="pro" className="p-4   bg-[#311858]/30">
+            <td key="pro" className="p-4  bg-[#311858]/30">
               {renderValue(feature.pro)}
             </td>,
 
