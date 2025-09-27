@@ -11,6 +11,7 @@ import {
 import { Menu, ChevronDown } from "lucide-react";
 import { navElem } from "./data/navElem";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Mobile() {
   const [expandedItems, setExpandedItems] = useState({});
@@ -53,24 +54,17 @@ function Mobile() {
                     {expandedItems[item.id] && item.subItems && (
                       <div className="ml-4 mt-2 space-y-1">
                         {item.subItems.map((sub) => (
-                          <a
-                            key={sub.id}
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
-                          >
-                            {sub.name}
-                          </a>
+                          <p className="text-gray-400 text-sm space-y-2 px-4 py-2">
+                            <NavLink to={sub.link}>{sub.name}</NavLink>
+                          </p>
                         ))}
                       </div>
                     )}
                   </>
                 ) : (
-                  <a
-                    href="#"
-                    className="block px-4 py-3 font-medium hover:bg-violet-700 text-white rounded-lg transition-colors"
-                  >
-                    {item.name}
-                  </a>
+                  <p className="block px-4 py-3 font-medium hover:bg-violet-700 text-white rounded-lg transition-colors">
+                    <NavLink to={item.link}>{item.name}</NavLink>
+                  </p>
                 )}
               </div>
             ))}

@@ -1,7 +1,7 @@
 // File: src/App.jsx
 import React from "react";
 import "@fontsource/inter/500.css";
-import { ReactLenis, useLenis } from "lenis/react";
+import { ReactLenis } from "lenis/react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Companies from "./components/compainies/Companies";
@@ -15,10 +15,7 @@ import AISEOSection from "./components/CTA/Cta";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  const lenis = useLenis((lenis) => {
-    // called every scroll
-    console.log(lenis)
-  })
+
   return (
     <>
       <ReactLenis

@@ -9,8 +9,8 @@ export const navElem = {
       hasDropdown: true,
       link: "",
       subItems: [
-        { id: 11, name: "Ai Seo 1", link: "/" },
-        { id: 12, name: "Ai Seo 2", link: "/ai-seo-2" },
+        { id: 11, name: "First Page", link: "/" },
+        { id: 12, name: "Second Page", link: "/ai-seo-2" },
       ],
     },
     {
@@ -25,23 +25,23 @@ export const navElem = {
       hasDropdown: true,
       link: "#",
       subItems: [
-        { id: 31, name: "About Us", link: "/about" },
-        { id: 32, name: "Team", link: "/team" },
-        { id: 33, name: "Careers", link: "/careers" },
-        { id: 34, name: "Contact", link: "/contact" },
+        { id: 31, name: "About Us", link: "/" },
+        { id: 32, name: "Team", link: "/ai-seo-2" },
+        { id: 33, name: "Careers", link: "/ai-seo-2" },
+        { id: 34, name: "Contact", link: "/ai-seo-2" },
       ],
     },
     {
       id: 4,
       name: "Blog",
       hasDropdown: false,
-      link: "/blog",
+      link: "/ai-seo-2",
     },
     {
       id: 5,
       name: "Changelog",
       hasDropdown: false,
-      link: "/changelog",
+      link: "/ai-seo-2"
     },
   ],
 };
