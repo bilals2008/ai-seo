@@ -6,6 +6,8 @@ import Features from "./features/Features";
 import Client from "./Client/Client";
 import Pricing from "./Pricing/Pricing";
 import { ReactLenis, useLenis } from "lenis/react";
+import Cta from "./CTA/Cta";
+import Footer from "./footer/Footer";
 function Home() {
   const lenis = useLenis((lenis) => {
     // called every scroll
@@ -38,6 +40,8 @@ function Home() {
             <Client />
           </div>
           <Pricing />
+          <Cta/>
+          <Footer/>
         </div>
       </ReactLenis>
     </>
