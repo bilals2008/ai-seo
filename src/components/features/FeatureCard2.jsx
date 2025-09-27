@@ -1,6 +1,6 @@
 // File: src/components/features/FeatureCard2.jsx
 import React from 'react'
-import cone from "../../assets/images/cone.png";
+import cone from "../../assets/images/cone.webp";
 function FeatureCard2() {
   return (
     <div className="w-full md:h-[395px] md:w-72 bg-black rounded-xl p-5 flex flex-col items-center justify-evenly space-y-4 shadow-lg border border-[#48484b] ">

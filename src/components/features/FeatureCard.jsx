@@ -1,6 +1,6 @@
 // File: src/components/features/FeatureCard.jsx
 import React from "react";
-import ring from "../../assets/images/ring.png";
+import ring from "../../assets/images/ring.webp";
 
 function FeatureCard() {
   return (

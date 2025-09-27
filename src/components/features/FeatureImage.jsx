@@ -4,7 +4,7 @@ import featureImg from "../../assets/images/feture1.png";
 
 function FeatureImage() {
   return (
-    <div className="relative w-full rounded-xl overflow-hidden shadow-lg  py-2 mt-[-15px]">
+    <div className="relative max-w-11/12 rounded-xl overflow-hidden shadow-lg  py-2 mt-[-15px]">
       {/* Image */}
       <img
         src={featureImg}
